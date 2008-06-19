@@ -4,8 +4,14 @@ module RenderCaching
     
     def render_with_cache(key = nil)
       key ||= request.request_uri
-      result = Rails.cache.fetch(key) { response.body }
-      render :text => Rails.cache.read(key)
+      body = Rails.cache.read(key)
+      if body
+        render :text => body
+      else
+        yield if block_given?
+        render unless performed?
+        Rails.cache.write(key, response.body)
+      end
     end
   end
 end
