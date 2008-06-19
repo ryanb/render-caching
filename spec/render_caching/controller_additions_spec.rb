@@ -74,4 +74,9 @@ describe RenderCaching::ControllerAdditions do
     Rails.cache.write('some_key', 'page content')
     render_with_cache('some_key') { violated('block was executed') }
   end
+  
+  it "should pass options to cache write call" do
+    Rails.cache.expects(:write).with('some_key', @response.body, :expires_in => 5)
+    render_with_cache('some_key', :expires_in => 5)
+  end
 end
