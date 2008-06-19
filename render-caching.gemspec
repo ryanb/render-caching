@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.description = %q{Cache render calls in Rails controllers.}
   s.email = %q{ryan (at) railscasts (dot) com}
   s.extra_rdoc_files = ["CHANGELOG", "lib/render_caching.rb", "LICENSE", "README", "tasks/deployment.rake", "tasks/spec.rake", "TODO"]
-  s.files = ["CHANGELOG", "lib/render_caching.rb", "LICENSE", "README", "spec/render-caching/controller_additions_spec.rb", "spec/spec_helper.rb", "tasks/deployment.rake", "tasks/spec.rake", "TODO", "Manifest", "render-caching.gemspec"]
+  s.files = ["CHANGELOG", "lib/render_caching.rb", "LICENSE", "Manifest", "README", "render-caching.gemspec", "spec/render-caching/controller_additions_spec.rb", "spec/spec_helper.rb", "tasks/deployment.rake", "tasks/spec.rake", "TODO"]
   s.has_rdoc = true
   s.homepage = %q{http://github.com/ryanb/render-caching}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Render-caching", "--main", "README"]
@@ -39,7 +39,7 @@ end
 #     p.url            = "http://github.com/ryanb/render-caching"
 #     p.author         = 'Ryan Bates'
 #     p.email          = "ryan (at) railscasts (dot) com"
-#     p.ignore_pattern = ["script/*", "*.gemspec"]
+#     p.ignore_pattern = ["script/*"]
 #   end
 # 
 # rescue LoadError => boom

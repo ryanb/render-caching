@@ -10,7 +10,7 @@ begin
     p.url            = "http://github.com/ryanb/render-caching"
     p.author         = 'Ryan Bates'
     p.email          = "ryan (at) railscasts (dot) com"
-    p.ignore_pattern = ["script/*", "*.gemspec"]
+    p.ignore_pattern = ["script/*"]
   end
 
 rescue LoadError => boom
