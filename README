@@ -11,7 +11,7 @@ First install the gem.
 
 Then specify it in your Rails config.
 
-	gem.config 'ryanb-render-caching', :lib => 'render_caching', :source => 'http://gems.github.com'
+	config.gem 'ryanb-render-caching', :lib => 'render_caching', :source => 'http://gems.github.com'
 
 Rails 2.1 or later required.
 

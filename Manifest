@@ -4,7 +4,6 @@ lib/render_caching.rb
 LICENSE
 Manifest
 README
-render-caching.gemspec
 spec/render_caching/controller_additions_spec.rb
 spec/spec_helper.rb
 tasks/deployment.rake
