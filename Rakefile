@@ -4,7 +4,7 @@ require 'rake'
 begin
   require 'echoe'
 
-  Echoe.new('render-caching', '0.1.0') do |p|
+  Echoe.new('render-caching', '0.1.1') do |p|
     p.summary        = "Cache render calls in Rails controllers."
     p.description    = "Cache render calls in Rails controllers."
     p.url            = "http://github.com/ryanb/render-caching"
