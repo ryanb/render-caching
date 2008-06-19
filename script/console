@@ -2,8 +2,5 @@
 # File: script/console
 irb = RUBY_PLATFORM =~ /(:?mswin|mingw)/ ? 'irb.bat' : 'irb'
 
-libs =  " -r irb/completion"
-# Perhaps use a console_lib to store any extra methods I may want available in the cosole
-# libs << " -r #{File.dirname(__FILE__) + '/../lib/console_lib/console_logger.rb'}"
-puts "Loading nifty-generators gem"
-exec "#{irb} #{libs} --simple-prompt"
+puts "Loading render-caching gem"
+exec "#{irb} -r irb/completion -r #{File.dirname(__FILE__) + '/../lib/render_caching.rb'} --simple-prompt"
